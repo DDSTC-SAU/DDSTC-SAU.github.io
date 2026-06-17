@@ -108,6 +108,9 @@
 		.member-section {
 			margin-bottom: 50px;
 		}
+		.member-section + .member-section {
+			margin-top: 70px;
+		}
 		.member-section-title {
 			text-align: center;
 			color: #4a6fa5;
@@ -125,10 +128,24 @@
 		.member-item-center {
 			text-align: center;
 			width: 180px;
+			height: auto;
+			margin: 0;
+			display: block;
+			background: transparent;
 		}
 		.member-item-center img {
+			width: 180px;
+			height: 180px;
+			object-fit: cover;
+			object-position: center top;
+			display: block;
 			border-radius: 4px;
 			box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+		}
+		.member-item-center img.member-photo-contain {
+			object-fit: contain;
+			object-position: center center;
+			background: #3f91db;
 		}
 		.member-item-center div {
 			margin-top: 10px;
@@ -177,6 +194,10 @@
 			.member-item-center {
 				width: 140px;
 			}
+			.member-item-center img {
+				width: 140px;
+				height: 140px;
+			}
 			.alumni-card {
 				font-size: 15px;
 			}
@@ -210,8 +231,8 @@
 				<h2 class="member-section-title">教师团队</h2>
 				<div class="member-grid">
 					<div class="member-item-center">
-						<a href="https://ccf.org.cn/cmsFileManager//column/3445FAD02F0A3245770C4E0A341B62BD.jpg">
-						<img alt="沈阳航空航天大学-范纯龙" src="https://ccf.org.cn/cmsFileManager//column/3445FAD02F0A3245770C4E0A341B62BD.jpg" width="180" height="150"/>
+						<a href="images/fan-chunlong.jpg">
+						<img alt="沈阳航空航天大学-范纯龙" src="images/fan-chunlong.jpg" />
 						</a>
 						<div>范纯龙：教授，博导，学术带头人</div>
 					</div>
@@ -224,43 +245,43 @@
 					</div>
 
 					<div class="member-item-center">
-						<img src="https://i.imgs.ovh/2026/05/14/096de0326dfa12ff7964f9c3cf3bf780.jpg"  width="180" height="150"/>
+						<img src="images/wang-gang.jpeg" alt="王刚" />
 						<div>王刚：科研负责人，讲师</div>
 					</div>
 				</div>
 			</div>
 			
-			<!-- 学生团队部分 -->
+			<!-- 在读学生部分 -->
 			<div class="member-section">
-				<h2 class="member-section-title">学生团队</h2>
+				<h2 class="member-section-title">在读学生</h2>
 				<div class="member-grid">
 					<div class="member-item-center">
-						<img src="https://i.imgs.ovh/2026/05/14/08b939c1e722329b515f79ae5ac655e1.jpg" width="180" height="150"/>
+						<img src="images/li-changze.jpg" alt="李昌泽" />
 						<div>李昌泽：硕士生</div>
 					</div>
 					
 					<div class="member-item-center">
-						<img src="https://i.imgs.ovh/2026/05/14/df73912385f15498967d6db5ce65ff54.jpg" width="180" height="150"/>
+						<img src="images/han-luyao.jpg" alt="韩璐瑶" />
 						<div>韩璐瑶：硕士生</div>
 					</div>
 
 					<div class="member-item-center">
-						<img src="https://i.imgs.ovh/2026/05/14/379d5bbdbb7493dbd7a329a7635a6be8.jpg" width="180" height="150"/>
+						<img src="images/zhang-ying.jpg" alt="张莹" />
 						<div>张莹：硕士生</div>
 					</div>
 
 					<div class="member-item-center">
-						<img src="https://i.imgs.ovh/2026/05/14/190510f6d0a82f17d3fed5aca00c4c6d.jpg" width="180" height="150"/>
+						<img src="images/li-xinyue.jpg" alt="李欣月" />
 						<div>李欣月：硕士生</div>
 					</div>
 
 					<div class="member-item-center">
-						<img src="https://i.imgs.ovh/2026/05/14/156e3ec55155d2c4952cfb22c5d9ad42.jpg" width="180" height="150"/>
+						<img src="images/na-yingxin.jpg" alt="那瀛心" />
 						<div>那瀛心：硕士生</div>
 					</div>
 
 					<div class="member-item-center">
-						<img src="https://i.imgs.ovh/2026/05/14/22b63db7d91de2cf41e832ac57766b05.jpg" width="180" height="150"/>
+						<img src="images/li-shujin.jpg" alt="李树金" class="member-photo-contain" />
 						<div>李树金：硕士生</div>
 					</div>
 				</div>
@@ -271,7 +292,7 @@
 				<div class="alumni-card">
 					<h3 class="alumni-category">硕士毕业生</h3>
 					<ul class="alumni-list">
-						<li><span class="alumni-year">2026届：</span><span class="alumni-name">唐玉尧</span>（天津大学攻博），<span class="alumni-name">于丙峰</span>（大连工业大学艺术与信息工程学院任教），<span class="alumni-name">于甜甜</span>（大连工业大学艺术与信息工程学院任教）</li>
+						<li><span class="alumni-year">2026届：</span><span class="alumni-name">唐玉尧</span>（天津大学攻博），<span class="alumni-name">于丙峰</span>（大连工业大学任教），<span class="alumni-name">于甜甜</span>（大连工业大学任教）</li>
 					</ul>
 				</div>
 			</div>
