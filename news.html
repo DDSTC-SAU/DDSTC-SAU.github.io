@@ -7,12 +7,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="format-detection" content="telephone=no">
-	<title>分布式数据安全与可信计算课题组</title>
+	<title>分布式数据安全与可信计算课题组 - 开源代码</title>
 	<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="css/all.css" />
 	<link rel="stylesheet" href="css/screen.css" />
 	<style>
-		
 		#nav ul {
 			list-style: none;
 			padding: 0;
@@ -44,14 +43,12 @@
 			border-radius: 4px;
 			margin: 10px 0;
 		}
-
-		
-		.index-wrapper {
+		.opensource-wrapper {
 			max-width: 1200px;
 			margin: 30px auto;
 			padding: 0 20px;
 		}
-		.index-body {
+		.opensource-body {
 			background: rgba(255, 255, 255, 0.9);
 			padding: 40px 60px;
 			border-radius: 8px;
@@ -65,49 +62,67 @@
 			border-bottom: 2px solid #4a6fa5;
 			display: inline-block;
 		}
-		.index-body p {
+		.opensource-intro {
 			line-height: 1.8;
 			color: #555;
-			margin: 15px 0;
+			margin: 0 0 28px;
 			text-align: justify;
 			text-justify: inter-ideograph;
 		}
-		.index-body p:first-of-type {
-			font-size: 18px;
-			color: #333;
-			font-weight: 500;
+		.project-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			gap: 24px;
 		}
-
-		
-		.recruitment {
-			margin-top: 30px;
-			padding: 25px;
-			background: #f8f9fa;
-			border-radius: 6px;
-			border-left: 4px solid #4a6fa5;
+		.project-card {
+			border: 1px solid #e4e8ef;
+			border-radius: 8px;
+			background: #fff;
+			padding: 24px;
+			box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 		}
-		.recruitment-title {
-			font-size: 20px;
-			color: #333;
-			margin-bottom: 15px;
-			font-weight: bold;
+		.project-card h3 {
+			margin: 0 0 12px;
+			color: #2c3e50;
+			font-size: 22px;
+			line-height: 1.4;
 		}
-		.recruitment ul {
-			padding-left: 20px;
-			margin: 10px 0;
-		}
-		.recruitment li {
-			line-height: 1.8;
+		.project-card p {
 			color: #555;
-			margin: 8px 0;
+			line-height: 1.8;
+			margin: 0 0 18px;
+			text-align: justify;
+			text-justify: inter-ideograph;
 		}
-		.contact-email {
+		.project-tags {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 8px;
+			margin: 0 0 20px;
+			padding: 0;
+			list-style: none;
+		}
+		.project-tags li {
 			color: #4a6fa5;
-			font-weight: 500;
-			text-decoration: underline;
+			background: #eef3fa;
+			border: 1px solid #d7e2f1;
+			border-radius: 4px;
+			padding: 5px 10px;
+			font-size: 13px;
 		}
-
-		
+		.project-link {
+			display: inline-block;
+			padding: 10px 16px;
+			background: #4a6fa5;
+			color: #fff;
+			text-decoration: none;
+			border-radius: 4px;
+			font-weight: 600;
+		}
+		.project-link:hover {
+			background: #365982;
+			color: #fff;
+		}
 		@media (max-width: 768px) {
 			#nav ul {
 				display: none;
@@ -116,56 +131,102 @@
 			.menu_trigger {
 				display: block;
 			}
-			.index-body {
-				padding: 20px 15px;
+			.opensource-body {
+				padding: 24px 16px;
 			}
 			.slogan {
 				font-size: 24px;
 			}
+			.project-grid {
+				grid-template-columns: 1fr;
+			}
 		}
-	</style>	
+	</style>
 </head>
 <body>
 	<div id="wrapper">
-		<div class="wrapper-header" style="float">
-		
+		<div class="wrapper-header">
 			<header id="header">
-			<h1 class="logo">分布式数据安全与可信计算课题组</h1>
-				<a class="menu_trigger" href="#">menu</a>
-				
-					<nav id="nav">
-						<ul>
-							<li><a  href="index.html">主页</a></li>
-							<li><a href="paper_all.html">发表论文</a></li>
-							<li><a href="research.html">研究方向</a></li>
-							<li><a href="project.html">科研项目</a></li>
-							<li><a href="member.html">团队成员</a></li>
-							<li><a class="active" href="news.html">最近大事</a></li>							
-							<li><a href="index_en.html">学术活动记录<!DOCTYPE html>
-</body>
-</html></a></li>
-						</ul>
-					</nav>
-				
-				<!--<h2 class="slogan">Professional Web Designer</h2>-->
+				<h1 class="logo">分布式数据安全与可信计算课题组</h1>
+				<a class="menu_trigger" href="#">菜单</a>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">主页</a></li>
+						<li><a href="paper_all.html">发表论文</a></li>
+						<li><a href="research.html">研究方向</a></li>
+						<li><a href="project.html">科研项目</a></li>
+						<li><a href="member.html">团队成员</a></li>
+						<li><a class="active" href="news.html">开源代码</a></li>
+						<li><a href="index_en.html">学术活动记录</a></li>
+					</ul>
+				</nav>
 			</header>
 		</div>
-		<div class="publication-body">
-			<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<center><font size=100>马上国庆了<font></center>
+
+		<div class="opensource-wrapper">
+			<div class="opensource-body">
+				<h2 class="slogan">开源项目</h2>
+				<p class="opensource-intro">
+					本页面整理团队相关的开源代码与项目实践，便于同学和访问者了解项目功能、技术栈以及代码仓库。相关项目可用于课程实践、毕业设计参考、系统开发训练和后续科研原型验证。
+				</p>
+
+				<div class="project-grid">
+					<div class="project-card">
+						<h3>基于区块链的校园二手物品交易追溯系统设计与实现</h3>
+						<p>
+							该项目面向校园二手物品交易场景，围绕闲置物品发布、交易记录留存、流转过程追踪和可信溯源等需求进行设计。系统引入区块链可信记录机制，提升交易过程的透明度和可追溯性，可用于区块链应用开发、校园交易平台设计和可信数据记录场景的实践参考。
+						</p>
+						<ul class="project-tags">
+							<li>区块链</li>
+							<li>校园二手交易</li>
+							<li>交易追溯</li>
+							<li>JavaScript</li>
+						</ul>
+						<a class="project-link" href="https://github.com/AweiCodeLab/campus-second-hand-trace" target="_blank" rel="noopener">查看 GitHub 代码</a>
+					</div>
+
+					<div class="project-card">
+						<h3>基于规则式智能体的校园快递柜调度系统设计与实现</h3>
+						<p>
+							该项目面向校园快递柜管理与调度场景，围绕快递柜资源分配、物品存取管理、用户注册审核、通知公告和后台维护等功能展开。系统结合规则式智能体思想，对校园快递柜调度流程进行建模与实现，适合用于管理系统开发、前后端分离架构和智能调度类毕业设计参考。
+						</p>
+						<ul class="project-tags">
+							<li>Vue 3</li>
+							<li>FastAPI</li>
+							<li>快递柜调度</li>
+							<li>规则式智能体</li>
+						</ul>
+						<a class="project-link" href="https://github.com/AsclUleaN/Graduation-project" target="_blank" rel="noopener">查看 GitHub 代码</a>
+					</div>
+
+					<div class="project-card">
+						<h3>基于大模型的高校课程答疑微信小程序系统设计与实现</h3>
+						<p>
+							该项目面向高校课程学习与答疑场景，设计实现基于大模型能力的智能课程答疑微信小程序。系统围绕课程资料管理、学生提问、智能回答、历史记录和后端接口服务等功能展开，可为课程辅助教学、智能问答系统和移动端应用开发提供开源实践参考。
+						</p>
+						<ul class="project-tags">
+							<li>微信小程序</li>
+							<li>Spring Boot</li>
+							<li>大模型应用</li>
+							<li>课程答疑</li>
+						</ul>
+						<a class="project-link" href="https://github.com/qimuzi6/SmartAnswerHub" target="_blank" rel="noopener">查看 GitHub 代码</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-	
-	
+
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/isotope.pkgd.min.js"></script>
 	<script src="js/cells-by-row.js"></script>
 	<script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
-
+	<script>
+		$('.menu_trigger').click(function(e) {
+			e.preventDefault();
+			$('#nav ul').slideToggle(300);
+		});
+	</script>
 </body>
 </html>
