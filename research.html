@@ -92,6 +92,19 @@
 
 		
 		@media (max-width: 768px) {
+			html,
+			body {
+				max-width: 100%;
+				overflow-x: hidden;
+			}
+			.logo {
+				box-sizing: border-box;
+				max-width: 100%;
+				padding: 0 12px;
+				font-size: 30px;
+				line-height: 1.35;
+				overflow-wrap: anywhere;
+			}
 			#nav ul {
 				display: none;
 				flex-direction: column;
@@ -99,7 +112,17 @@
 			.menu_trigger {
 				display: block;
 			}
+			.index-wrapper {
+				box-sizing: border-box;
+				display: block;
+				width: auto;
+				max-width: none;
+				margin: 20px 12px;
+				padding: 0;
+			}
 			.research-body {
+				box-sizing: border-box;
+				width: 100%;
 				padding: 20px 15px;
 			}
 			.slogan {
@@ -108,8 +131,14 @@
 			.research-list a {
 				font-size: 16px;
 			}
+			.research-list {
+				margin: 0;
+				padding-left: 0;
+			}
 			.research-desc {
-				margin-left: 10px;
+				margin-left: 0;
+				text-align: left;
+				overflow-wrap: anywhere;
 			}
 		}
 	</style>
@@ -127,7 +156,7 @@
 						<li><a class="active" href="research.html">研究方向</a></li>
 						<li><a href="project.html">科研项目</a></li>
 						<li><a href="member.html">团队成员</a></li>
-						<li><a href="news.html">开源代码</a></li>							
+						<li><a href="news.html">开源代码</a></li>
 						<li><a href="index_en.html">学术活动记录</a></li>
 					</ul>
 				</nav>
@@ -138,20 +167,20 @@
 				<h2 class="slogan">研究方向</h2>
 				<ul class="research-list">
 					<li> 
-						<a href="https://homomorphicencryption.org/">隐私计算</a><br>
-						<p class="research-desc">聚焦同态加密、安全多方计算、联邦学习等核心技术，研究数据可用不可见的理论与方法，解决跨域数据协同中的隐私泄露问题，应用于金融风控、医疗数据分析等场景。</p>
+						<a>教育大数据</a><br>
+						<p class="research-desc">面向教育教学与人才培养场景，研究多源教育数据的采集、治理、分析与知识发现方法，探索学习行为建模、个性化推荐和教学质量评价等关键技术，为教育决策与智慧教学提供数据支撑。</p>
 					</li>
 					<li> 
-						<a href="https://mlsys.org/">分布式机器学习系统</a><br>
-						<p class="research-desc">研究大规模机器学习模型的分布式训练框架，优化通信效率与资源调度策略，探索异构环境下的模型一致性与容错机制，支撑千亿参数级模型的高效训练与部署。</p>
+						<a>可信智能体</a><br>
+						<p class="research-desc">围绕智能体的安全、可信与协同开展研究，重点关注身份认证、行为验证、信任评估和多智能体协作机制，提升智能体在开放网络环境中的可靠性、可解释性与风险防控能力。</p>
 					</li>
 					<li> 
-						<a href="http://faculty.neu.edu.cn/cc/zhangyf/prepare.html">云计算及边缘计算安全</a><br>
-						<p class="research-desc">针对云平台虚拟化安全、边缘节点可信认证、数据传输加密等问题，构建云边端一体化安全防护体系，研究轻量级加密算法与入侵检测机制，保障分布式计算环境的可信运行。</p>
+						<a>云计算</a><br>
+						<p class="research-desc">研究云环境下的数据管理、资源调度与服务计算技术，关注云边端协同、分布式存储、弹性计算和安全可靠运行等问题，支撑大规模数据密集型应用的高效部署与持续服务。</p>
 					</li>
 					<li> 
-						<a href="http://faculty.neu.edu.cn/cc/zhangyf/prepare.html">教育数据隐私保护</a><br>
-						<p class="research-desc">结合教育场景数据特点，研究学生行为数据、成绩数据的匿名化处理与可控共享技术，设计符合教育伦理的数据治理方案，平衡教育数据分析价值与个人隐私保护需求。</p>
+						<a>图计算</a><br>
+						<p class="research-desc">面向知识图谱、社交网络和复杂关联数据，研究高效图存储、图查询、图匹配与图分析方法，探索大规模动态图数据的分布式处理、可信验证及智能应用。</p>
 					</li>
 				</ul>
 			</div>		
